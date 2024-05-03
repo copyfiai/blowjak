@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+.other-side {
+  transform: rotateY(180deg);
+  transition: all ease-in 0.2s;
+}
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px black;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+}
