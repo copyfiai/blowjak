@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion as m } from "framer-motion";
+import Image from "next/image";
 
 const q = [
   {
@@ -34,7 +35,14 @@ const FAQ = () => {
 
   return (
     <div>
-      <section className="flex flex-col justify-center items-center bg-yellow-200 h-screen">
+      <section className="flex relative flex-col justify-center items-center bg-yellow-200 h-screen md:pb-0 pb-40">
+        <Image
+          alt="Stoner"
+          src="/pre/4.png"
+          height={300}
+          width={300}
+          className="absolute right-[-10px] bottom-0 z-0"
+        />
         <h1 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
           FAQ
         </h1>
@@ -63,7 +71,14 @@ const FAQ = () => {
           ))}
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center bg-sky-400 py-20">
+      <section className="flex flex-col relative items-center justify-center bg-sky-400 py-20 pb-80 md:pb-40">
+        <Image
+          alt="Stoner"
+          src="/pre/5.png"
+          height={300}
+          width={300}
+          className="absolute left-[-10px] bottom-0 z-0"
+        />
         <h2 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
           How to buy
         </h2>
