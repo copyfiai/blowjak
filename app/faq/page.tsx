@@ -42,7 +42,7 @@ const FAQ = () => {
           {q.map((item, index) => (
             <div className="flex flex-col items-center gap-4" key={index}>
               <h2
-                className="text-2xl font-bold text-white cursor-pointer  [text-shadow:-4px_2px_0px_#000000] font-outline-2"
+                className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2"
                 onClick={() => toggleAnswer(index)}
               >
                 {item.question}
@@ -63,13 +63,13 @@ const FAQ = () => {
           ))}
         </div>
       </section>
-      <section className="h-screen flex flex-col items-center justify-center bg-sky-400">
+      <section className="flex flex-col items-center justify-center bg-sky-400 py-20">
         <h2 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
           How to buy
         </h2>
-        <div className="grid grid-cols-2 gap-4 px-5">
-          <div>
-            <h1 className="text-2xl font-bold text-white cursor-pointer  [text-shadow:-4px_2px_0px_#000000] font-outline-2 text-right">
+        <div className="grid grid-cols-2 gap-8 px-5">
+          <div className="max-w-sm">
+            <h1 className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 text-right">
               1. Metamask Extension/App
             </h1>
             <p className="text-right font-mono text-sm">
@@ -79,11 +79,11 @@ const FAQ = () => {
           </div>
           <div></div>
           <div></div>
-          <div>
-            <h1 className="text-2xl font-bold text-white cursor-pointer  [text-shadow:-4px_2px_0px_#000000] font-outline-2">
+          <div className="max-w-sm">
+            <h1 className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2">
               2. Jak Up Eth
             </h1>
-            <p className="font-mono text-sm">
+            <p className="font-mono">
               Head over to bridge.base.org, connect your wallet on the Ethereum
               blockchain. Choose how much ETH you would like to bridge from the
               ERC20 network to Base. Remember to leave enough for gas fees!
@@ -91,22 +91,22 @@ const FAQ = () => {
           </div>
           <div></div>
           <div></div>
-          <div>
-            <h1 className="text-2xl font-bold text-white cursor-pointer  [text-shadow:-4px_2px_0px_#000000] font-outline-2 text-right">
+          <div className="max-w-sm">
+            <h1 className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 text-right">
               3. Buy $BJ
             </h1>
-            <p className="text-right font-mono text-sm">
+            <p className="text-right font-mono">
               Head over to Uniswap and paste the $BJ contract Address listed on
               this website to swap your ETH.
             </p>
           </div>
           <div></div>
           <div></div>
-          <div>
-            <h1 className="text-2xl font-bold text-white cursor-pointer  [text-shadow:-4px_2px_0px_#000000] font-outline-2">
+          <div className="max-w-sm">
+            <h1 className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2">
               4. Add $BJ on Metamask
             </h1>
-            <p className="font-mono text-sm">
+            <p className="font-mono">
               The final step is to simply import the $BJ contract address to
               your Metamask Wallet to see your $BJ tokens. All aboard the
               BlowJak Train!

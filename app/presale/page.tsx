@@ -49,7 +49,7 @@ const Presale = () => {
           Jakonomics
         </h2>
         <div className="flex justify-center text-left flex-col mx-auto md:w-1/2">
-          <h3 className="text-sky-500 font-outline-2 md:text-5xl tracking-wide text-4xl">
+          <h3 className="text-sky-500 font-outline-2 md:text-5xl tracking-wide text-4xl [text-shadow:-4px_2px_0px_#000000]">
             Presale Breakdown
           </h3>
           <div className="flex items-center gap-2">
@@ -71,7 +71,7 @@ const Presale = () => {
           />
         </div>
       </div>
-      <div className="py-20 h-screen px-10 relative bg-[#f06a22] w-full">
+      <div className="py-20 px-10 relative bg-[#f06a22] w-full">
         <h2 className="md:text-6xl text-4xl text-right text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal pb-20">
           Roadmap
         </h2>
@@ -83,34 +83,33 @@ const Presale = () => {
           width={300}
           className="absolute left-[-10px] bottom-0 z-0"
         />
-        <div className="grid md:grid-cols-3 grid-cols-1 justify-between px-10 gap-8 mx-auto z-20">
+        <div className="grid md:grid-cols-3 grid-cols-1 justify-between px-10 gap-8 mx-auto z-20 pb-80">
           <div>
-            <h3 className="text-white font-outline-2 text-3xl [text-shadow:-4px_2px_0px_#000000]">
+            <h3 className="text-white font-outline-2 text-3xl [text-shadow:1px_2px_0px_#000000]">
               1. Start
             </h3>
-            <p className="text-black/80">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              temporibus! Culpa voluptatem quae, qui aut, unde delectus nostrum
-              omnis vel quidem quisquam velit.
+            <p className="text-black/80 font-mono">
+              Drawing up the Memes, the BlowJaks, Mapping out the Tokenomics,
+              Writing the Smart Contract for the Presale, Establishing the
+              Network
             </p>
           </div>
           <div>
-            <h3 className="text-white font-outline-2 text-3xl [text-shadow:-4px_2px_0px_#000000]">
+            <h3 className="text-white font-outline-2 text-3xl [text-shadow:1px_2px_0px_#000000]">
               2. Presale
             </h3>
-            <p className="text-black/80">
-              exercitationem asperiores reiciendis deserunt voluptatibus amet
-              quidem quisquam velit. eum.
+            <p className="text-black/80 font-mono">
+              24 Hour Presale for BlowJaks. Might close earlier if the Milestone
+              is hit.
             </p>
           </div>
           <div>
-            <h3 className="text-white font-outline-2 text-3xl [text-shadow:-4px_2px_0px_#000000]">
+            <h3 className="text-white font-outline-2 text-3xl [text-shadow:1px_2px_0px_#000000]">
               3. Marketing
             </h3>
-            <p className="text-black/80">
+            <p className="text-black/80 font-mono">
               {" "}
-              temporibus! Culpa voluptatem quae, qui aut, unde delectus nostrum
-              omnis vel quidem quisquam velit.
+              CEX, KOLs, Swaps, Listings
             </p>
           </div>
         </div>
