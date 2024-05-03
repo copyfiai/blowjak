@@ -8,7 +8,7 @@ export default function Home() {
       <div className=" bg-[#f06a22] opacity-90 absolute top-0 left-0 right-0 bottom-0" />
       <div className="flex justify-center items-center z-20 h-screen">
         <h1 className="md:text-6xl text-4xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
-          Blow it or Jak it, either way it'll go up.
+          Blow it or Jak it, either way it&apos;ll go up.
         </h1>
       </div>
       <Walking />
