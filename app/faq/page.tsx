@@ -79,6 +79,7 @@ const FAQ = () => {
           ))}
         </div>
       </section>
+      {/* HOW TO BUY */}
       <section className="flex flex-col overflow-hidden relative items-center justify-center bg-sky-300 py-20 pb-80 border-b-4 border-black">
         <m.img
           initial={{ rotate: -3, scale: 1, y: 0 }}
@@ -98,8 +99,8 @@ const FAQ = () => {
         <h2 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
           How to buy
         </h2>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 px-5 items-center">
-          <div className="max-w-sm">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-2 px-5 items-center">
+          <div className="max-w-sm md:order-1 order-2">
             <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 md:text-right pb-2">
               1. Metamask Extension/App
             </h1>
@@ -109,14 +110,15 @@ const FAQ = () => {
             </p>
           </div>
           <Image
-            src={"/img/meta.png"}
+            src={"/img/met.png"}
             height={350}
             width={350}
             alt="Metamask"
+            className="md:order-2 order-1"
           />
-          <div></div>
-          <div className="max-w-sm">
-            <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 pb-2">
+
+          <div className="max-w-sm md:order-4 order-4">
+            <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer order-4 [text-shadow:1px_2px_0px_#000000] font-outline-2 pb-2">
               2. Jak Up Eth
             </h1>
             <p className="font-mono text-sm md:text-base">
@@ -125,9 +127,15 @@ const FAQ = () => {
               ERC20 network to Base. Remember to leave enough for gas fees!
             </p>
           </div>
-          <div></div>
-          <div></div>
-          <div className="max-w-sm">
+          <Image
+            src={"/img/cb.png"}
+            height={350}
+            width={350}
+            alt="Metamask"
+            className="md:order-3 order-2"
+          />
+
+          <div className="max-w-sm md:order-5 order-6">
             <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 md:text-right pb-2">
               3. Buy $BJ
             </h1>
@@ -136,9 +144,23 @@ const FAQ = () => {
               this website to swap your ETH.
             </p>
           </div>
-          <div></div>
-          <div></div>
-          <div className="max-w-sm">
+
+          <Image
+            src={"/img/horse.png"}
+            height={350}
+            width={350}
+            alt="Metamask"
+            className="md:order-6 order-5"
+          />
+
+          <Image
+            src={"/img/bj.png"}
+            height={350}
+            width={350}
+            alt="Metamask"
+            className="md:order-7 order-7"
+          />
+          <div className="max-w-sm md:order-8 order-8">
             <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 pb-2">
               4. Add $BJ on Metamask
             </h1>
