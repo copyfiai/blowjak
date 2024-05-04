@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex h-screen flex-col items-center justify-between p-24  z-20">
+    <main className="flex h-screen flex-col items-center justify-between p-24  z-20 overflow-hidden">
       <div className="bg-[url('/background.jpg')] h-screen absolute top-0 bottom-0 w-full bg-cover z-0" />
       <div className="bg-orange-400 opacity-90 absolute top-0 left-0 right-0 bottom-0" />
       <div className="flex justify-center items-center z-20 h-screen">

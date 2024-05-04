@@ -152,6 +152,7 @@ const Presale = () => {
         ></m.img>
         <div className="grid md:grid-cols-3 grid-cols-1 justify-between px-10 gap-8 mx-auto z-20 pb-64">
           <div>
+            <Image src="/img/pre.png" alt="rocket" height={280} width={280} />
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">
               1. Start
             </h3>
@@ -162,6 +163,12 @@ const Presale = () => {
             </p>
           </div>
           <div>
+            <Image
+              src="/img/rocket.png"
+              alt="rocket"
+              height={280}
+              width={280}
+            />
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">
               2. Presale
             </h3>
@@ -171,6 +178,7 @@ const Presale = () => {
             </p>
           </div>
           <div>
+            <Image src="/img/moon.png" alt="rocket" height={280} width={280} />
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">
               3. Marketing
             </h3>
