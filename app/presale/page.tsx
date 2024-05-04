@@ -25,32 +25,40 @@ const Presale = () => {
 
   return (
     <div>
-      <div className="py-52 flex justify-center items-center flex-col bg-sky-200 gap-4 relative border-b-4 border-black">
-        <h1 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
+      <div className="py-52 flex justify-center overflow-hidden items-center flex-col bg-sky-200 gap-4 relative border-b-4 border-black">
+        <h1 className="md:text-7xl text-5xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
           $BLOWJAK
         </h1>
 
         <div className="flex relative z-20">
-          <div className="bg-gray-200 px-4 py-2 text-lg font-mono rounded-full border-2 border-black pr-32">
+          <div className="bg-gray-200 md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
             0x5D639027789BD9D53c1a32dc1Cb18E6f1A16234c{" "}
           </div>
           <button
-            className="bg-sky-500 text-lg absolute right-2 top-[4px] px-6 rounded-full hover:bg-sky-300 py-1 border-2 border-black tracking-wider text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000]"
+            className="bg-sky-500 md:text-lg absolute right-2 top-[6px] md:px-6 px-4 md:py-[6px] text-sm rounded-full hover:bg-sky-300 py-1 border-2 border-black tracking-wider text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000]"
             onClick={handleCopy}
           >
             {copied ? "Got it!" : "COPY"}
           </button>
         </div>
         <Timer date={new Date("2024-05-16")} />
-        <Image
-          alt="Viking"
+        <m.img
+          initial={{ rotate: 1, scale: 1, y: 0 }}
+          animate={{ rotate: 2.5, scale: 1, y: 5 }}
+          transition={{
+            ease: "linear",
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          alt="Stoner"
           src="/pre/1.png"
-          height={320}
-          width={320}
-          className="absolute left-[-20px] bottom-0 z-0"
-        />
+          height={300}
+          width={300}
+          className="absolute left-[0] bottom-[-10px] z-0  md:max-w-full max-w-52"
+        ></m.img>
       </div>
-      <div className="py-20 pb-40 px-10 relative border-b-4 border-black">
+      <div className="py-20 pb-40 px-10 relative border-b-4 border-black overflow-hidden bg-yellow-100">
         <h2 className="md:text-6xl text-4xl text-left text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
           Jakonomics
         </h2>
@@ -67,7 +75,7 @@ const Presale = () => {
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-sky-500 shrink-0 rounded-full border-2 border-black" />
               <p className="text-black/80 shrink-0">
-                50% of Raise for expenses/development/distribution
+                50% of Raise for expenses/development
               </p>
             </div>
           </div>
@@ -76,7 +84,7 @@ const Presale = () => {
           <div>
             <PieChart />
           </div>
-          <div className="flex justify-center text-left flex-col mx-auto md:w-1/2">
+          <div className="flex justify-center text-left flex-col mx-auto md:w-1/2 overflow-hidden">
             <h3 className="text-sky-500 font-outline-2 md:text-5xl tracking-wide text-4xl [text-shadow:-4px_2px_0px_#000000] pb-5">
               Supply Breakdown
             </h3>
@@ -104,28 +112,44 @@ const Presale = () => {
               <div className="w-4 h-4 bg-green-400 rounded-full border-2 border-black" />
               <p className="text-black/80">10% Team/Advisors</p>
             </div>
-            <Image
+            <m.img
+              initial={{ rotate: -1, scale: 1, x: 0 }}
+              animate={{ rotate: 3, scale: 1, x: -5 }}
+              transition={{
+                ease: "linear",
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
               alt="Stoner"
               src="/pre/2.png"
               height={300}
               width={300}
-              className="absolute right-0 bottom-0 z-0"
-            />
+              className="absolute right-[0] bottom-[-10px] z-0  md:max-w-full max-w-52"
+            ></m.img>
           </div>
         </div>
       </div>
-      <div className="py-20 px-10 relative bg-orange-400 w-full">
+      <div className="md:py-20 pt-20 px-10 relative bg-orange-400 w-full overflow-hidden border-b-4 border-black">
         <h2 className="md:text-6xl text-4xl text-right text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal pb-20">
           Roadmap
         </h2>
 
-        <Image
+        <m.img
+          initial={{ rotate: 1, scale: 1, y: 0 }}
+          animate={{ rotate: -2.5, scale: 1, y: 10 }}
+          transition={{
+            ease: "linear",
+            duration: 0.3,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
           alt="Stoner"
           src="/pre/3.png"
           height={300}
           width={300}
-          className="absolute left-[-10px] bottom-0 z-0"
-        />
+          className="absolute left-[0] bottom-[-10px] z-0 md:max-w-full max-w-52"
+        ></m.img>
         <div className="grid md:grid-cols-3 grid-cols-1 justify-between px-10 gap-8 mx-auto z-20 pb-64">
           <div>
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">

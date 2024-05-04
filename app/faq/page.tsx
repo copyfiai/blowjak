@@ -35,22 +35,30 @@ const FAQ = () => {
 
   return (
     <div>
-      <section className="flex relative flex-col justify-center items-center bg-yellow-200 h-screen md:pb-0 pb-40">
-        <Image
+      <section className="flex relative flex-col justify-center overflow-hidden items-center bg-yellow-200 h-screen md:pb-0 pb-40 border-b-4 border-black">
+        <m.img
+          initial={{ rotate: 1, scale: 1, y: 0 }}
+          animate={{ rotate: 2, scale: 1, y: -5 }}
+          transition={{
+            ease: "linear",
+            duration: 0.4,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
           alt="Stoner"
           src="/pre/4.png"
           height={300}
           width={300}
-          className="absolute right-[-10px] bottom-0 z-0"
-        />
+          className="absolute right-[0] bottom-[-10px] z-0  md:max-w-full max-w-52"
+        ></m.img>
         <h1 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
           FAQ
         </h1>
         <div className="flex flex-col gap-4">
           {q.map((item, index) => (
-            <div className="flex flex-col items-center gap-4" key={index}>
+            <div className="flex flex-col items-center gap-2" key={index}>
               <h2
-                className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2"
+                className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 hover:text-yellow-400 ease-in-out transition-all duration-200"
                 onClick={() => toggleAnswer(index)}
               >
                 {item.question}
@@ -63,7 +71,7 @@ const FAQ = () => {
                   opacity: openIndex === index ? 1 : 0,
                   y: openIndex === index ? 0 : 30,
                 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.4 }}
               >
                 {item.answer}
               </m.p>
@@ -71,34 +79,47 @@ const FAQ = () => {
           ))}
         </div>
       </section>
-      <section className="flex flex-col relative items-center justify-center bg-sky-400 py-20 pb-80 md:pb-40">
-        <Image
+      <section className="flex flex-col overflow-hidden relative items-center justify-center bg-sky-300 py-20 pb-80 border-b-4 border-black">
+        <m.img
+          initial={{ rotate: -3, scale: 1, y: 0 }}
+          animate={{ rotate: 3, scale: 1, y: -5 }}
+          transition={{
+            ease: "linear",
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
           alt="Stoner"
           src="/pre/5.png"
           height={300}
           width={300}
-          className="absolute left-[-10px] bottom-0 z-0"
-        />
+          className="absolute left-[0] bottom-[-10px] z-0  md:max-w-full max-w-64"
+        ></m.img>
         <h2 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
           How to buy
         </h2>
-        <div className="grid grid-cols-2 gap-8 px-5">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 px-5 items-center">
           <div className="max-w-sm">
-            <h1 className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 text-right">
+            <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 md:text-right pb-2">
               1. Metamask Extension/App
             </h1>
-            <p className="text-right font-mono text-sm">
+            <p className="md:text-right text-sm md:text-base font-mono text-black/80">
               Install Metamask as an extention on your Web Browser or as an App
               on your mobile phone.
             </p>
           </div>
-          <div></div>
+          <Image
+            src={"/img/meta.png"}
+            height={350}
+            width={350}
+            alt="Metamask"
+          />
           <div></div>
           <div className="max-w-sm">
-            <h1 className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2">
+            <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 pb-2">
               2. Jak Up Eth
             </h1>
-            <p className="font-mono">
+            <p className="font-mono text-sm md:text-base">
               Head over to bridge.base.org, connect your wallet on the Ethereum
               blockchain. Choose how much ETH you would like to bridge from the
               ERC20 network to Base. Remember to leave enough for gas fees!
@@ -107,10 +128,10 @@ const FAQ = () => {
           <div></div>
           <div></div>
           <div className="max-w-sm">
-            <h1 className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 text-right">
+            <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 md:text-right pb-2">
               3. Buy $BJ
             </h1>
-            <p className="text-right font-mono">
+            <p className="md:text-right font-mono text-sm md:text-base">
               Head over to Uniswap and paste the $BJ contract Address listed on
               this website to swap your ETH.
             </p>
@@ -118,7 +139,7 @@ const FAQ = () => {
           <div></div>
           <div></div>
           <div className="max-w-sm">
-            <h1 className="text-4xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2">
+            <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 pb-2">
               4. Add $BJ on Metamask
             </h1>
             <p className="font-mono">
