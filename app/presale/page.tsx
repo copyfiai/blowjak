@@ -150,9 +150,15 @@ const Presale = () => {
           width={300}
           className="absolute left-[0] bottom-[-10px] z-0 md:max-w-full max-w-52"
         ></m.img>
-        <div className="grid md:grid-cols-3 grid-cols-1 justify-between px-10 gap-8 mx-auto z-20 pb-64">
-          <div className=" max-w-sm">
-            <Image src="/img/pre.png" alt="rocket" height={280} width={280} />
+        <div className="grid md:grid-cols-3 grid-cols-1 md:justify-between justify-center w-sm px-10 gap-8 z-20 pb-64">
+          <div className="max-w-sm mx-auto">
+            <Image
+              src="/img/pre.png"
+              alt="rocket"
+              height={280}
+              width={280}
+              className="mx-auto"
+            />
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">
               1. Start
             </h3>
@@ -162,12 +168,13 @@ const Presale = () => {
               Network.
             </p>
           </div>
-          <div className="max-w-sm">
+          <div className="max-w-sm mx-auto">
             <Image
               src="/img/rocket.png"
               alt="rocket"
               height={280}
               width={280}
+              className="mx-auto"
             />
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">
               2. Presale
@@ -177,8 +184,14 @@ const Presale = () => {
               close earlier if the Milestone is hit.
             </p>
           </div>
-          <div className="max-w-sm">
-            <Image src="/img/moon.png" alt="rocket" height={280} width={280} />
+          <div className="max-w-sm mx-auto">
+            <Image
+              src="/img/moon.png"
+              alt="rocket"
+              height={280}
+              width={280}
+              className="mx-auto"
+            />
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">
               3. Marketing
             </h3>
