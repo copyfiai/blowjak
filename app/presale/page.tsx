@@ -72,7 +72,7 @@ const Presale = () => {
         <h1 className="md:text-7xl z-20 text-5xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
           $BLOWJAK
         </h1>
-        <div className="grid grid-cols-4 py-10 justify-between w-full text-center max-w-2xl z-20 pt-20">
+        <div className="grid grid-cols-4 py-10 justify-between w-full text-center max-w-2xl z-20">
           <div>
             <p className="h-10 w-10 outline border-b-2 border-black rounded-full bg-sky-300 mx-auto flex justify-center items-center">
               1
@@ -110,8 +110,17 @@ const Presale = () => {
             </div>
           </div>
         </div>
+        <Image
+          alt="dynamite"
+          width={700}
+          height={300}
+          src="/dyn.png"
+          className="pb-10 mt-[-40px] mr-[-80px]"
+        />
+
+        <Timer date={new Date("2024-05-15")} />
         <div className="flex relative z-20">
-          <div className="bg-gray-200 md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
+          <div className="bg-gray-200 relative md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
             0x9690e6b6E9f9EA3f96eC4B986Eb4036bf6cFD1E4{" "}
           </div>
           <button
@@ -121,12 +130,7 @@ const Presale = () => {
             {copied ? "Got it!" : "COPY"}
           </button>
         </div>
-        <Timer date={new Date("2024-05-16")} />
-        <img
-          alt="dynamite"
-          src="/dyn.png"
-          className=" absolute z-0 top-[160px] md:h-80 left-0"
-        />
+
         <m.img
           initial={{ rotate: 1, scale: 1, y: 0 }}
           animate={{ rotate: 2.5, scale: 1, y: 5 }}
