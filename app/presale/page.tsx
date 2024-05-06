@@ -7,6 +7,49 @@ import Timer from "@/components/time";
 import PieChart from "@/components/pie";
 import PieChart2 from "@/components/pie2";
 
+const contri = [
+  {
+    address: "0x12231456890890123880947787",
+    amount: 30,
+  },
+  {
+    address: "0x12231456890890123880947787",
+    amount: 28,
+  },
+  {
+    address: "0x12231456890890123880947787",
+    amount: 22,
+  },
+  {
+    address: "0x12231456890890123880947787",
+    amount: 19,
+  },
+  {
+    address: "0x12231456890890123880947787",
+    amount: 16,
+  },
+  {
+    address: "0x12231456890890123880947787",
+    amount: 12,
+  },
+  {
+    address: "0x12231456890890123880947787",
+    amount: 11,
+  },
+  {
+    address: "0x12231456890890123880947787",
+    amount: 9,
+  },
+  {
+    address: "0x12231456890890123880947787",
+    amount: 4,
+  },
+  {
+    address: "0x12231456890890123880947787",
+    amount: 0.2,
+  },
+];
+
 const Presale = () => {
   const [copied, setCopied] = useState(false);
 
@@ -29,7 +72,44 @@ const Presale = () => {
         <h1 className="md:text-7xl text-5xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
           $BLOWJAK
         </h1>
-
+        <div className="grid grid-cols-4 py-10 justify-between w-full text-center max-w-2xl">
+          <div>
+            <p className="h-10 w-10 outline border-b-2 border-black rounded-full bg-sky-300 mx-auto flex justify-center items-center">
+              1
+            </p>
+            <div className="border-l-2 border-black h-4 w-0 mx-auto border-2" />
+            <div className="text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000] z-40 md:text-xl text-lg">
+              Launch
+            </div>
+          </div>
+          <div>
+            <p className="h-10 w-10 outline border-b-2 border-black rounded-full bg-sky-300 mx-auto flex justify-center items-center">
+              2
+            </p>
+            <div className="border-l-2 border-black h-4 w-0 mx-auto border-2" />
+            <div className="text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000] z-40 md:text-xl text-lg">
+              Fire
+            </div>
+          </div>
+          <div>
+            <p className="h-10 w-10 outline border-b-2 border-black rounded-full bg-sky-300 mx-auto flex justify-center items-center">
+              3
+            </p>
+            <div className="border-l-2 border-black h-4 w-0 mx-auto border-2" />
+            <div className="text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000] z-40 md:text-xl text-lg">
+              Almost there
+            </div>
+          </div>
+          <div>
+            <p className="h-10 w-10 outline border-b-2 border-black rounded-full bg-sky-300 mx-auto flex justify-center items-center">
+              4.
+            </p>
+            <div className="border-l-2 border-black h-4 w-0 mx-auto border-2" />
+            <div className="text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000] z-40 md:text-xl text-lg">
+              KABOOM!
+            </div>
+          </div>
+        </div>
         <div className="flex relative z-20">
           <div className="bg-gray-200 md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
             0xceD99d2450496e9AcA57f918Ba2a25EdE8B653D3{" "}
@@ -42,6 +122,7 @@ const Presale = () => {
           </button>
         </div>
         <Timer date={new Date("2024-05-16")} />
+
         <m.img
           initial={{ rotate: 1, scale: 1, y: 0 }}
           animate={{ rotate: 2.5, scale: 1, y: 5 }}
@@ -62,13 +143,13 @@ const Presale = () => {
         <h2 className="md:text-6xl text-4xl text-left text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
           Jakonomics
         </h2>
-        <div className="flex md:flex-row flex-col items-center gap-5 md:max-w-3xl mx-auto">
+        <div className="flex md:flex-row flex-col items-center gap-5 md:max-w-3xl mx-auto border-b-4 border-l-2 outline outline-2 outline-black bg-white mb-8 rounded-3xl border-black pb-7">
           <PieChart2 />
           <div className="flex justify-center text-left flex-col mx-auto md:w-1/2">
-            <h3 className="text-sky-500 font-outline-2 md:text-5xl tracking-wide text-4xl [text-shadow:-4px_2px_0px_#000000] pb-5">
+            <h3 className="text-sky-500 font-outline-2 md:text-5xl tracking-wide text-4xl [text-shadow:-4px_2px_0px_#000000] pb-5 ml-2">
               Presale Breakdown
             </h3>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ">
               <div className="w-4 h-4 bg-[#f06a22] rounded-full border-2 border-black" />
               <p className="text-left text-black/80">50% of Raise to LP</p>
             </div>
@@ -80,12 +161,12 @@ const Presale = () => {
             </div>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col justify-center items-center gap-5 md:max-w-3xl mx-auto pb-36">
+        <div className="flex md:flex-row flex-col justify-center items-center gap-5 md:max-w-3xl mx-auto mb-36 bg-white rounded-3xl border-l-2 border-black border-b-4 outline outline-2 outline-black pb-7">
           <div>
             <PieChart />
           </div>
           <div className="flex justify-center text-left flex-col mx-auto md:w-1/2 overflow-hidden">
-            <h3 className="text-sky-500 font-outline-2 md:text-5xl tracking-wide text-4xl [text-shadow:-4px_2px_0px_#000000] pb-5">
+            <h3 className="text-sky-500 font-outline-2 md:text-5xl tracking-wide text-4xl [text-shadow:-4px_2px_0px_#000000] pb-5 z-50 ml-2">
               Supply Breakdown
             </h3>
             <div className="flex items-center gap-2">
@@ -128,6 +209,27 @@ const Presale = () => {
               className="absolute right-[0] bottom-[-10px] z-0  md:max-w-full max-w-52"
             ></m.img>
           </div>
+        </div>
+      </div>
+      <div className="grid w-full py-20 bg-sky-300 border-b-4 border-black justify-center">
+        <div>
+          <h2 className="md:text-5xl text-3xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal pb-8">
+            Top 10 Contributors
+          </h2>
+          {contri.map((item, index) => (
+            <div
+              key={index}
+              className="grid grid-cols-10 justify-between items-center gap-4 px-10 py-2 border-b-2 border-dotted border-black"
+            >
+              <p className="col-span-1 text-center">{index + 1}.</p>
+              <p className="text-black text-center font-mono md:text-lg text-sm col-span-7">
+                {item.address.slice(0, 10)}...{item.address.slice(-12)}
+              </p>
+              <p className="text-black md:text-lg text-right col-span-2">
+                {item.amount} ETH
+              </p>
+            </div>
+          ))}
         </div>
       </div>
       <div className="md:py-20 pt-20 px-10 relative bg-orange-400 w-full overflow-hidden border-b-4 border-black">

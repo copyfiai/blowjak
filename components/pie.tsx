@@ -71,7 +71,7 @@ const PieChart = () => {
           transform: "rotate(270deg)", // Correctly comment as rotating the chart by 90 degrees
         }}
       ></canvas>
-      <div className="absolute w-[350px] h-[350px] rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-transparent z-[1]"></div>
+      <div className="absolute w-[350px] h-[350px] rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-transparent z-1"></div>
     </div>
   );
 };
