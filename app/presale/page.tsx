@@ -54,7 +54,7 @@ const Presale = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    const address = "0xceD99d2450496e9AcA57f918Ba2a25EdE8B653D3"; // Replace with your address
+    const address = "0x9690e6b6E9f9EA3f96eC4B986Eb4036bf6cFD1E4"; // Replace with your address
     navigator.clipboard
       .writeText(address)
       .then(() => {
@@ -69,10 +69,10 @@ const Presale = () => {
   return (
     <div>
       <div className="py-52 flex justify-center overflow-hidden items-center flex-col bg-sky-200 gap-4 relative border-b-4 border-black">
-        <h1 className="md:text-7xl text-5xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
+        <h1 className="md:text-7xl z-20 text-5xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
           $BLOWJAK
         </h1>
-        <div className="grid grid-cols-4 py-10 justify-between w-full text-center max-w-2xl">
+        <div className="grid grid-cols-4 py-10 justify-between w-full text-center max-w-2xl z-20 pt-20">
           <div>
             <p className="h-10 w-10 outline border-b-2 border-black rounded-full bg-sky-300 mx-auto flex justify-center items-center">
               1
@@ -112,7 +112,7 @@ const Presale = () => {
         </div>
         <div className="flex relative z-20">
           <div className="bg-gray-200 md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
-            0xceD99d2450496e9AcA57f918Ba2a25EdE8B653D3{" "}
+            0x9690e6b6E9f9EA3f96eC4B986Eb4036bf6cFD1E4{" "}
           </div>
           <button
             className="bg-sky-500 md:text-lg absolute right-2 top-[6px] md:px-6 px-4 md:py-[6px] text-sm rounded-full hover:bg-sky-300 py-1 border-2 border-black tracking-wider text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000]"
@@ -122,7 +122,11 @@ const Presale = () => {
           </button>
         </div>
         <Timer date={new Date("2024-05-16")} />
-
+        <img
+          alt="dynamite"
+          src="/dyn.png"
+          className=" absolute z-0 top-[160px] md:h-80 left-0"
+        />
         <m.img
           initial={{ rotate: 1, scale: 1, y: 0 }}
           animate={{ rotate: 2.5, scale: 1, y: 5 }}
@@ -172,7 +176,7 @@ const Presale = () => {
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-[#f06a22] rounded-full border-2 border-black" />
               <p className="text-left text-black/80">
-                50% of Supply to Presale Participants
+                50% of Supply to Presale Contributors
               </p>
             </div>
             <div className="flex items-center gap-2">
@@ -181,17 +185,15 @@ const Presale = () => {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-yellow-400 rounded-full border-2 border-black" />
-              <p className="text-black/80">
-                15% of Tokens for Exchanges + Market Making
-              </p>
+              <p className="text-black/80">10% of Tokens for CEX Listing</p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-red-400 rounded-full border-2 border-black" />
-              <p className="text-black/80">10% Marketing</p>
+              <p className="text-black/80">20% Marketing</p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-green-400 rounded-full border-2 border-black" />
-              <p className="text-black/80">10% Team/Advisors</p>
+              <p className="text-black/80">5% Team</p>
             </div>
             <m.img
               initial={{ rotate: -1, scale: 1, x: 0 }}
@@ -211,12 +213,19 @@ const Presale = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full py-20 bg-sky-300 border-b-4 border-black justify-center">
-        <div>
+      <div className="grid w-full py-20 bg-sky-300 border-b-4 border-black justify-center relative">
+        <div className="z-20">
           <h2 className="md:text-5xl text-3xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal pb-8">
             Top 10 Contributors
           </h2>
-          {contri.map((item, index) => (
+          <div className="h-[500px] bg-white max-w-[650px] rounded-lg border-b-4 relative border-black outline outline-2 mx-auto">
+            <img
+              alt="dynamite"
+              src="/chars/batman.png"
+              className="absolute h-64 bottom-0 right-0"
+            />
+          </div>
+          {/* {contri.map((item, index) => (
             <div
               key={index}
               className="grid grid-cols-10 justify-between items-center gap-4 px-10 py-2 border-b-2 border-dotted border-black"
@@ -229,8 +238,21 @@ const Presale = () => {
                 {item.amount} ETH
               </p>
             </div>
-          ))}
+          ))} */}
         </div>
+        <m.img
+          initial={{ rotate: 1, y: 0, x: 0 }}
+          animate={{ rotate: -2.5, y: 1, x: 4 }}
+          transition={{
+            ease: "linear",
+            duration: 0.3,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          alt="lambo"
+          src="/lambo.png"
+          className=" absolute z-0 bottom-10 left-[-70px] h-72"
+        />
       </div>
       <div className="md:py-20 pt-20 px-10 relative bg-orange-400 w-full overflow-hidden border-b-4 border-black">
         <h2 className="md:text-6xl text-4xl text-right text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal pb-20">

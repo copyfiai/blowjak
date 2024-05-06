@@ -37,8 +37,8 @@ export default function Home() {
 
   return (
     <div>
-      <main className="flex h-2/3 flex-col items-center justify-between p-24  z-20 py-80">
-        <div className="bg-[url('/background.jpg')] grayscale absolute top-0 bottom-0 w-full bg-cover z-0" />
+      <main className="flex h-screen flex-col items-center justify-center p-24  z-20 py-80">
+        <div className="bg-[url('/stripper.jpg')] grayscale absolute top-0 bottom-0 w-full bg-cover z-0" />
         <div className="bg-[#f06a22] opacity-80 absolute top-0 left-0 right-0 bottom-0 border-black border-b-4" />
         <div className="flex justify-center items-center z-20 h-2/3">
           <h1 className="md:text-6xl text-4xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
@@ -110,7 +110,7 @@ export default function Home() {
         <h2 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
           How to buy
         </h2>
-        <p className="font-mono">After Prelaunch</p>
+        <p className="font-mono">Postlaunch</p>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-2 px-5 items-center">
           <div className="max-w-sm md:order-1 order-2">
             <h1 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 md:text-right pb-2">
