@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
+import Marq from "./marq";
 
 const Navigation = () => {
   const router = useRouter();
@@ -18,13 +19,8 @@ const Navigation = () => {
   return (
     <div className="flex justify-between items-center">
       <div>
-        <m.div
-          initial={{ y: -500, opacity: 0 }}
-          animate={{ y: 0, opacity: 2 }}
-          transition={{ type: "spring", bounce: 0.25 }}
-          className="w-full absolute z-20"
-        >
-          <nav className="flex justify-between m-auto h-24 md:h-32 bg-transparent items-center md:px-10 px-2.5">
+        <div className="w-full absolute z-20">
+          <nav className="flex justify-between m-auto h-24 md:h-32 bg-transparent items-center md:px-10 px-5 pt-10">
             {/* LOGO */}
             <m.div
               whileHover={{ scale: 1.2, rotate: 360 }}
@@ -37,7 +33,7 @@ const Navigation = () => {
                 <img
                   src="logo.png"
                   alt="logo"
-                  className="h-16 md:h-28 shrink-0"
+                  className="h-16 md:h-28 shrink-0 z-50"
                 />
               </Link>
             </m.div>
@@ -57,8 +53,9 @@ const Navigation = () => {
               </m.button> */}
             </div>
           </nav>
-        </m.div>
+        </div>
       </div>
+      <Marq />
     </div>
   );
 };

@@ -37,17 +37,17 @@ export default function Home() {
 
   return (
     <div>
-      <main className="flex h-screen flex-col items-center justify-center p-24  z-20 py-80">
-        <div className="bg-[url('/stripper.jpg')] grayscale absolute top-0 bottom-0 w-full bg-cover z-0" />
-        <div className="bg-[#f06a22] opacity-80 absolute top-0 left-0 right-0 bottom-0 border-black border-b-4" />
-        <div className="flex justify-center items-center z-20 h-2/3">
-          <h1 className="md:text-6xl text-4xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
+      <main className="h-screen justify-center z-20 mb-[-90px]">
+        <div className="bg-[url('/stripper.jpg')] grayscale absolute top-0 bottom-0 w-full bg-cover h-full z-0" />
+        <div className="bg-[#f06a22] opacity-60 absolute top-0 left-0 right-0 bottom-0 " />
+        <div className="flex justify-center items-center z-20">
+          <h1 className="md:text-6xl xl:text-8xl text-4xl text-center text-white h-screen flex items-center mt-[-40px] [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl xl:max-w-4xl z-50">
             Blow it or Jak it, either way it&apos;ll go up.
           </h1>
         </div>
         <Walking />
       </main>
-      <section className="flex relative flex-col justify-center overflow-hidden items-center bg-sky-200 h-screen md:pb-0 pb-40 border-y-4 border-black">
+      <section className="flex relative flex-col justify-center overflow-hidden items-center bg-sky-200 h-screen md:pb-0 border-y-4 border-black">
         <m.img
           initial={{ rotate: 1, scale: 1, y: 0 }}
           animate={{ rotate: 2, scale: 1, y: -5 }}
@@ -63,12 +63,12 @@ export default function Home() {
           width={300}
           className="absolute right-[0] bottom-[-10px] z-0  md:max-w-full max-w-52"
         ></m.img>
-        <h1 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl pb-10">
+        <h1 className="md:text-7xl text-6xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl">
           FAQ
         </h1>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-8 pt-8">
           {q.map((item, index) => (
-            <div className="flex flex-col items-center gap-2" key={index}>
+            <div className="flex flex-col items-center gap-8" key={index}>
               <h2
                 className="md:text-4xl text-2xl font-bold text-white cursor-pointer  [text-shadow:1px_2px_0px_#000000] font-outline-2 hover:text-yellow-400 ease-in-out transition-all duration-200"
                 onClick={() => toggleAnswer(index)}

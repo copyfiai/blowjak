@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/navigation";
 import localFont from "next/font/local";
 import Footer from "@/components/footer";
+import Marquee from "react-fast-marquee";
 
 const inter = Inter({ subsets: ["latin"] });
 
