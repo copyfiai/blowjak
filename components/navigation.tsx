@@ -14,13 +14,15 @@ const Navigation = () => {
   const params = usePathname();
   const isPresale = params === "/presale";
 
+  console.log(isPresale);
+
   console.log(params);
   const [isOpen, setIsOpen] = useState(true); //Phone menu
   return (
     <div className="flex justify-between items-center">
-      <div>
+      <div className="z-50">
         <div className="w-full absolute z-20">
-          <nav className="flex justify-between m-auto h-24 md:h-32 bg-transparent items-center md:px-10 px-5 pt-10">
+          <nav className="flex justify-between m-auto h-24 md:h-32 bg-transparent items-center md:px-10 px-5 pt-10 z-60">
             {/* LOGO */}
             <m.div
               whileHover={{ scale: 1.2, rotate: 360 }}
@@ -38,7 +40,7 @@ const Navigation = () => {
               </Link>
             </m.div>
             {/* NAVIGATION */}
-            <div className="flex gap-2">
+            <div className="flex gap-2 z-50">
               <m.button
                 onClick={() => router.push(!isPresale ? "/presale" : "/")}
                 className="md:px-5 px-4 bg-sky-500 text-xl md:text-4xl text-white md:py-2 py-2 font-outline-2 rounded-full font-bold border-b-4 border-sky-700 outline outline-sky-700 [text-shadow:-3px_1px_0px_#000000] hover:bg-sky-400 hover:border-sky-600 transition-all ease-in duration-100"

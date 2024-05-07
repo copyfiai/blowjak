@@ -37,17 +37,17 @@ export default function Home() {
 
   return (
     <div>
-      <main className="h-screen justify-center z-20 mb-[-90px]">
+      <main className="h-screen justify-center">
         <div className="bg-[url('/stripper.jpg')] grayscale absolute top-0 bottom-0 w-full bg-cover h-full z-0" />
         <div className="bg-[#f06a22] opacity-60 absolute top-0 left-0 right-0 bottom-0 " />
-        <div className="flex justify-center items-center z-20">
-          <h1 className="md:text-6xl xl:text-8xl text-4xl text-center text-white h-screen flex items-center mt-[-40px] [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-2xl xl:max-w-4xl z-50">
+        <div className="flex justify-center items-center z-20 h-full">
+          <h1 className="md:text-6xl xl:text-8xl text-4xl text-center text-white flex items-center [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal max-w-sm xl:max-w-4xl md:max-w-xl z-50">
             Blow it or Jak it, either way it&apos;ll go up.
           </h1>
         </div>
         <Walking />
       </main>
-      <section className="flex relative flex-col justify-center overflow-hidden items-center bg-sky-200 h-screen md:pb-0 border-y-4 border-black">
+      <section className="flex relative flex-col justify-center overflow-hidden items-center bg-sky-200 h-screen md:pb-0 border-y-4 border-black mt-[-60px] pb-40">
         <m.img
           initial={{ rotate: 1, scale: 1, y: 0 }}
           animate={{ rotate: 2, scale: 1, y: -5 }}
