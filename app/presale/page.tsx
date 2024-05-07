@@ -6,6 +6,7 @@ import { motion as m } from "framer-motion";
 import Timer from "@/components/time";
 import PieChart from "@/components/pie";
 import PieChart2 from "@/components/pie2";
+import Marquee from "react-fast-marquee";
 
 const contri = [
   {
@@ -217,7 +218,7 @@ const Presale = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full py-20 bg-sky-300 border-b-4 border-black justify-center relative">
+      <div className="grid w-full pt-20 bg-sky-300 border-b-4 border-black justify-center relative">
         <div className="z-20">
           <h2 className="md:text-5xl text-3xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal pb-8">
             Top 10 Contributors
@@ -244,9 +245,17 @@ const Presale = () => {
             </div>
           ))} */}
         </div>
+
+        <Marquee
+          speed={120}
+          autoFill
+          className=" h-full z-0 pb-0 py-0 absolute bottom-0"
+        >
+          <img src="/road.png" className="mt-[-40px]" />
+        </Marquee>
         <m.img
           initial={{ rotate: 1, y: 0, x: 0 }}
-          animate={{ rotate: -2.5, y: 1, x: 4 }}
+          animate={{ rotate: -2, y: 2, x: 2 }}
           transition={{
             ease: "linear",
             duration: 0.3,
@@ -255,7 +264,7 @@ const Presale = () => {
           }}
           alt="lambo"
           src="/lambo.png"
-          className=" absolute z-0 bottom-10 left-[-70px] h-72"
+          className=" absolute z-0 bottom-10 left-[-70px] h-80 z-2"
         />
       </div>
       <div className="md:py-20 pt-20 px-10 relative bg-orange-400 w-full overflow-hidden border-b-4 border-black">

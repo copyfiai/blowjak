@@ -166,7 +166,7 @@ export default function Home() {
           />
 
           <Image
-            src={"/img/bj.png"}
+            src={"/img/bj2.png"}
             height={300}
             width={300}
             alt="Metamask"
