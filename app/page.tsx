@@ -47,7 +47,7 @@ export default function Home() {
         </div>
         <Walking />
       </main>
-      <section className="flex relative flex-col justify-center overflow-hidden items-center bg-[#f07c3d]  border-y-4 border-black mt-[-60px] pt-40 md:pb-40 pb-80  ">
+      <section className="flex relative flex-col justify-center overflow-hidden items-center bg-yellow-100  border-y-4 border-black mt-[-60px] pt-40 md:pb-40 pb-80  ">
         <m.img
           initial={{ rotate: 1, scale: 1, y: 0 }}
           animate={{ rotate: 2, scale: 1, y: -5 }}

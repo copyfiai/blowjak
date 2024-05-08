@@ -218,7 +218,7 @@ const Presale = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full pt-20 bg-sky-300 border-b-4 border-black justify-center relative">
+      <div className="grid w-full pt-20 bg-sky-200 border-b-4 border-black justify-center relative">
         <div className="z-20">
           <h2 className="md:text-5xl text-3xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal pb-8">
             Top 10 Contributors
