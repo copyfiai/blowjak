@@ -170,7 +170,7 @@ const Presale = () => {
             </div>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col justify-center items-center gap-5 md:max-w-3xl mx-auto mb-36 bg-white rounded-3xl border-l-2 border-black border-b-4 outline outline-2 outline-black pb-7">
+        {/* <div className="flex md:flex-row flex-col justify-center items-center gap-5 md:max-w-3xl mx-auto mb-36 bg-white rounded-3xl border-l-2 border-black border-b-4 outline outline-2 outline-black pb-7">
           <div>
             <PieChart />
           </div>
@@ -216,7 +216,7 @@ const Presale = () => {
               className="absolute right-[0] bottom-[-10px] z-0  md:max-w-full max-w-52"
             ></m.img>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="grid w-full pt-20 bg-sky-200 border-b-4 border-black justify-center relative">
         <div className="z-20">
