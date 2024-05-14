@@ -56,7 +56,7 @@ const Presale = () => {
 
   const handleCopy = () => {
     const address =
-      "https://www.pump.fun/DzkJouA64CrH5Wi6sDanVCuKAQH9BeVhbRkaNXaHEWK"; // Replace with your address
+      "https://www.pump.fun/DzkJouA64CrH5Wi6sDanVCuKAQH9BeVhbRkaNXaHEWK1"; // Replace with your address
     navigator.clipboard
       .writeText(address)
       .then(() => {
