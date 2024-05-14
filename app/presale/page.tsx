@@ -55,8 +55,7 @@ const Presale = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    const address =
-      "https://www.pump.fun/DzkJouA64CrH5Wi6sDanVCuKAQH9BeVhbRkaNXaHEWK1"; // Replace with your address
+    const address = "0x9690e6b6E9f9EA3f96eC4B986Eb4036bf6cFD1E4"; // Replace with your address
     navigator.clipboard
       .writeText(address)
       .then(() => {
@@ -120,10 +119,10 @@ const Presale = () => {
           className="pb-10 mt-[-40px] mr-[-80px]"
         />
 
-        <Timer date={new Date("2024-05-14")} />
+        <Timer date={new Date("2024-05-15")} />
         <div className="flex relative z-20">
           <div className="bg-gray-200 relative md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
-            https://www.pump.fun/DzkJouA64CrH5Wi6sDanVCuKAQH9BeVhbRkaNXaHEWK1{" "}
+            0x9690e6b6E9f9EA3f96eC4B986Eb4036bf6cFD1E4{" "}
           </div>
           <button
             className="bg-sky-500 md:text-lg absolute right-2 top-[6px] md:px-6 px-4 md:py-[6px] text-sm rounded-full hover:bg-sky-300 py-1 border-2 border-black tracking-wider text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000]"
@@ -157,15 +156,17 @@ const Presale = () => {
           <PieChart2 />
           <div className="flex justify-center text-left flex-col mx-auto md:w-1/2">
             <h3 className="text-sky-500 font-outline-2 md:text-5xl tracking-wide text-4xl [text-shadow:-4px_2px_0px_#000000] pb-5 ml-2">
-              Launch Breakdown
+              Presale Breakdown
             </h3>
             <div className="flex items-center gap-2 ">
               <div className="w-4 h-4 bg-[#f06a22] rounded-full border-2 border-black" />
-              <p className="text-left text-black/80">100% Fair Launch</p>
+              <p className="text-left text-black/80">50% of Raise to LP</p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-sky-500 shrink-0 rounded-full border-2 border-black" />
-              <p className="text-black/80 shrink-0">0% for Team</p>
+              <p className="text-black/80 shrink-0">
+                50% of Raise for expenses/development
+              </p>
             </div>
           </div>
         </div>
@@ -300,7 +301,7 @@ const Presale = () => {
             </h3>
             <p className="text-black/80 font-mono">
               Drawing up the Memes, the BlowJaks, Mapping out the Jakonomics,
-              Writing the Smart Contract for the Solana Launch, Establishing the
+              Writing the Smart Contract for the Presale, Establishing the
               Network.
             </p>
           </div>
@@ -313,11 +314,11 @@ const Presale = () => {
               className="mx-auto"
             />
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">
-              2. Fair Launch
+              2. Presale
             </h3>
             <p className="text-black/80 font-mono">
-              The $BJ will host a Fair Launch, everyone is welcome to Jak it
-              up.t.
+              The $BJ Presale will only be open for 24 hours. The Presale might
+              close earlier if the Milestone is hit.
             </p>
           </div>
           <div className="max-w-sm mx-auto">
@@ -333,9 +334,9 @@ const Presale = () => {
             </h3>
             <p className="text-black/80 font-mono">
               {" "}
-              Blow it or Jak it, Either Way it&apos;ll Go Up. BlowJak team will
-              continue making waves on SOL, creating top tier memes, minigames
-              and Listings until we&apos;re at the top.
+              The Marketing consists of making use of the delegated $BJ supply
+              to get listed on various CEX, stock up on promotion through KOLs,
+              and make $BJ available on multiple swaps.
             </p>
           </div>
         </div>

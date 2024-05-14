@@ -11,7 +11,7 @@ const Footer = () => {
         </p>
         <div className="flex">
           <Link
-            href="https://t.me/BlowJakOnSol"
+            href="https://t.me/BlowJakOnBase"
             className="cursor-pointer hover:animate-spin"
           >
             <Image src="/social/ts.png" height={50} width={50} alt="Logo" />

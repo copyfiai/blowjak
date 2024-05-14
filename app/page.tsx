@@ -10,21 +10,21 @@ const q = [
   {
     question: "1. What is BlowJak?",
     answer:
-      "BlowJak represents an upcoming explosion on the SOLANA Ecosystem. Blowing and Jaking it up, the BlowJak community is here to stay.",
+      "BlowJak represents an upcoming explosion on the Base Ecosystem. Blowing and Jaking it up, the BlowJak community is here to stay.",
   },
   {
     question: "2. What Chain is BlowJak on?",
-    answer: "BlowJak is on the SOLANA ecosystem.",
+    answer: "BlowJak is on the BASE ecosystem.",
   },
   {
     question: "3. How can I buy $BJ?",
     answer:
-      "Make sure to download Phantom as an extension/app on your browser/mobile phone. Then, simply purchase $BJ using the SOL through a DEX like Uniswap for example. It's really easy to Blow it!",
+      "Make sure to download Metamask as an extension/app on your browser/mobile phone. Then, simply purchase $BJ using the BASE-ETH through a DEX like Uniswap for example. It's really easy to Blow it!",
   },
   {
-    question: "4. Is there a presale?",
+    question: "4. How Long is Presale?",
     answer:
-      "BlowJak hosts a Fair Launch on pump.fun so that everybody gets the chance to Jak it up",
+      "The Presale lasts 24h, might close earlier if the milestone is hit. Not everyone will make it in time to Jak it.",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      {/* <section className="flex flex-col overflow-hidden relative items-center justify-center bg-[#f06a22] py-20 pb-80 border-b-4 border-black">
+      <section className="flex flex-col overflow-hidden relative items-center justify-center bg-[#f06a22] py-20 pb-80 border-b-4 border-black">
         <m.img
           initial={{ rotate: -3, scale: 1, y: 0 }}
           animate={{ rotate: 3, scale: 1, y: -5 }}
@@ -183,7 +183,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
