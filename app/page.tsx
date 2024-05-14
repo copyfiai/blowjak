@@ -22,9 +22,8 @@ const q = [
       "Make sure to download Phantom as an extension/app on your browser/mobile phone. Then, simply purchase $BJ using the SOL through a DEX like Uniswap for example. It's really easy to Blow it!",
   },
   {
-    question: "4. How Long is Presale?",
-    answer:
-      "The Presale lasts until we hit 69K. Not everyone will make it in time to Jak it.",
+    question: "4. Is there a presale?",
+    answer: "There is no Presale, we only Jak it up with a Fair Launch",
   },
 ];
 

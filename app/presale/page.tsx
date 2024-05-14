@@ -156,7 +156,7 @@ const Presale = () => {
           <PieChart2 />
           <div className="flex justify-center text-left flex-col mx-auto md:w-1/2">
             <h3 className="text-sky-500 font-outline-2 md:text-5xl tracking-wide text-4xl [text-shadow:-4px_2px_0px_#000000] pb-5 ml-2">
-              Presale Breakdown
+              Launch Breakdown
             </h3>
             <div className="flex items-center gap-2 ">
               <div className="w-4 h-4 bg-[#f06a22] rounded-full border-2 border-black" />
@@ -312,7 +312,7 @@ const Presale = () => {
               className="mx-auto"
             />
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">
-              2. Presale
+              2. Fair Launch
             </h3>
             <p className="text-black/80 font-mono">
               The $BJ will host a Fair Launch, everyone is welcome to Jak it
