@@ -23,7 +23,8 @@ const q = [
   },
   {
     question: "4. Is there a presale?",
-    answer: "There is no Presale, we only Jak it up with a Fair Launch",
+    answer:
+      "BlowJak hosts a Fair Launch on pump.fun so that everybody gets the chance to Jak it up",
   },
 ];
 
