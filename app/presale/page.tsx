@@ -119,7 +119,7 @@ const Presale = () => {
           className="pb-10 mt-[-40px] mr-[-80px]"
         />
 
-        <Timer date={new Date("2024-05-15")} />
+        <Timer date={new Date("2024-05-17")} />
         <div className="flex relative z-20">
           <div className="bg-gray-200 relative md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
             0x9690e6b6E9f9EA3f96eC4B986Eb4036bf6cFD1E4{" "}
