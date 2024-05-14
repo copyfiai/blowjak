@@ -19,8 +19,8 @@ const PieChart2 = () => {
     const innerRadius = outerRadius / 1.5; // Adjust the inner radius for the doughnut hole
 
     // Define the proportions of the pie chart
-    const proportions = [100]; // Percentages for each segment
-    const colors = ["#fb923c"]; // Colors for each segment
+    const proportions = [50, 50]; // Percentages for each segment
+    const colors = ["#fb923c", "#38bdf8"]; // Colors for each segment
 
     let startAngle = 0;
     let endAngle = 0;
