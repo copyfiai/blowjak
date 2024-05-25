@@ -119,11 +119,8 @@ const Presale = () => {
           className="pb-10 mt-[-40px] mr-[-80px]"
         />
 
-        <Timer date={new Date("2024-05-17")} />
+        <Timer date={new Date("2024-05-27")} />
         <div className="flex relative z-20">
-          <div className="bg-gray-200 relative md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
-            0x9690e6b6E9f9EA3f96eC4B986Eb4036bf6cFD1E4{" "}
-          </div>
           <button
             className="bg-sky-500 md:text-lg absolute right-2 top-[6px] md:px-6 px-4 md:py-[6px] text-sm rounded-full hover:bg-sky-300 py-1 border-2 border-black tracking-wider text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000]"
             onClick={handleCopy}
@@ -160,13 +157,11 @@ const Presale = () => {
             </h3>
             <div className="flex items-center gap-2 ">
               <div className="w-4 h-4 bg-[#f06a22] rounded-full border-2 border-black" />
-              <p className="text-left text-black/80">50% of Raise to LP</p>
+              <p className="text-left text-black/80">100% Fair Launch</p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-sky-500 shrink-0 rounded-full border-2 border-black" />
-              <p className="text-black/80 shrink-0">
-                50% of Raise for expenses/development
-              </p>
+              <p className="text-black/80 shrink-0">0% for Team</p>
             </div>
           </div>
         </div>
