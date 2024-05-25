@@ -162,11 +162,11 @@ const Presale = () => {
             </h3>
             <div className="flex items-center gap-2 ">
               <div className="w-4 h-4 bg-[#f06a22] rounded-full border-2 border-black" />
-              <p className="text-left text-black/80">50% of Raise to LP</p>
+
+              <p className="text-left text-black/80">90% Fair Launch</p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-sky-500 shrink-0 rounded-full border-2 border-black" />
-
               <p className="text-black/80 shrink-0">10% for Team</p>
 
             </div>

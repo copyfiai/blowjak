@@ -24,6 +24,7 @@ const PieChart2 = () => {
     const colors = ["#fb923c", "#0ea5e9"]; // Colors for each segment
 
 
+
     let startAngle = 0;
     let endAngle = 0;
 
