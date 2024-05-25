@@ -119,7 +119,7 @@ const Presale = () => {
           className="pb-10 mt-[-40px] mr-[-80px]"
         />
 
-        <Timer date={new Date("2024-05-14")} />
+        <Timer date={new Date("2024-05-27")} />
         <div className="flex relative z-20">
           <div className="bg-gray-200 relative md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
             https://pump.fun/{" "}
@@ -160,11 +160,11 @@ const Presale = () => {
             </h3>
             <div className="flex items-center gap-2 ">
               <div className="w-4 h-4 bg-[#f06a22] rounded-full border-2 border-black" />
-              <p className="text-left text-black/80">100% Fair Launch</p>
+              <p className="text-left text-black/80">90% Fair Launch</p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-sky-500 shrink-0 rounded-full border-2 border-black" />
-              <p className="text-black/80 shrink-0">0% for Team</p>
+              <p className="text-black/80 shrink-0">10% for Team</p>
             </div>
           </div>
         </div>
