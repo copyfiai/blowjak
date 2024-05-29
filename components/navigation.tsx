@@ -12,7 +12,7 @@ import Marq from "./marq";
 const Navigation = () => {
   const router = useRouter();
   const params = usePathname();
-  const isPresale = params === "/presale";
+  const isPresale = params === "/about";
 
   console.log(isPresale);
 
@@ -42,7 +42,7 @@ const Navigation = () => {
             {/* NAVIGATION */}
             <div className="flex gap-2 z-50">
               <m.button
-                onClick={() => router.push(!isPresale ? "/presale" : "/")}
+                onClick={() => router.push(!isPresale ? "/about" : "/")}
                 className="md:px-5 px-4 bg-sky-500 text-xl md:text-4xl text-white md:py-2 py-2 font-outline-2 rounded-full font-bold border-b-4 border-sky-700 outline outline-sky-700 [text-shadow:-3px_1px_0px_#000000] hover:bg-sky-400 hover:border-sky-600 transition-all ease-in duration-100"
               >
                 {!isPresale ? "About" : "Home"}

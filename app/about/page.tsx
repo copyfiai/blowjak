@@ -51,11 +51,13 @@ const contri = [
   },
 ];
 
+const ca = "7fATZo2fDcC2X1MiL7cjMt5eKoWDrVj3xM62jrwXNbH4";
+
 const Presale = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    const address = "pump.fun"; // Replace with your address
+    const address = ca; // Replace with your address
     navigator.clipboard
       .writeText(address)
       .then(() => {
@@ -122,7 +124,7 @@ const Presale = () => {
         <Timer date={new Date("2024-05-27")} />
         <div className="flex relative z-20">
           <div className="bg-gray-200 relative md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
-            pump.fun will realese the CA soon{" "}
+            {ca}
           </div>
           <button
             className="bg-sky-500 md:text-lg absolute right-2 top-[6px] md:px-6 px-4 md:py-[6px] text-sm rounded-full hover:bg-sky-300 py-1 border-2 border-black tracking-wider text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000]"
