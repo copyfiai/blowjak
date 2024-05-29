@@ -45,7 +45,7 @@ const Navigation = () => {
                 onClick={() => router.push(!isPresale ? "/presale" : "/")}
                 className="md:px-5 px-4 bg-sky-500 text-xl md:text-4xl text-white md:py-2 py-2 font-outline-2 rounded-full font-bold border-b-4 border-sky-700 outline outline-sky-700 [text-shadow:-3px_1px_0px_#000000] hover:bg-sky-400 hover:border-sky-600 transition-all ease-in duration-100"
               >
-                {!isPresale ? "Presale" : "Home"}
+                {!isPresale ? "About" : "Home"}
               </m.button>
               {/* <m.button
                 onClick={() => router.push("/faq")}

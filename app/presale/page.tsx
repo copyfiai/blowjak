@@ -216,55 +216,7 @@ const Presale = () => {
           </div>
         </div> */}
       </div>
-      <div className="grid w-full pt-20 bg-sky-200 border-b-4 border-black justify-center relative">
-        <div className="z-20">
-          <h2 className="md:text-5xl text-3xl text-center text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal pb-8">
-            Top 10 Contributors
-          </h2>
-          <div className="h-[500px] bg-white max-w-[650px] rounded-lg border-b-4 relative border-black outline outline-2 mx-auto">
-            <img
-              alt="dynamite"
-              src="/chars/batman.png"
-              className="absolute h-64 bottom-0 right-0"
-            />
-          </div>
-          {/* {contri.map((item, index) => (
-            <div
-              key={index}
-              className="grid grid-cols-10 justify-between items-center gap-4 px-10 py-2 border-b-2 border-dotted border-black"
-            >
-              <p className="col-span-1 text-center">{index + 1}.</p>
-              <p className="text-black text-center font-mono md:text-lg text-sm col-span-7">
-                {item.address.slice(0, 10)}...{item.address.slice(-12)}
-              </p>
-              <p className="text-black md:text-lg text-right col-span-2">
-                {item.amount} ETH
-              </p>
-            </div>
-          ))} */}
-        </div>
 
-        <Marquee
-          speed={120}
-          autoFill
-          className=" h-full z-0 pb-0 py-0 absolute bottom-0"
-        >
-          <img src="/road.png" className="mt-[-40px]" />
-        </Marquee>
-        <m.img
-          initial={{ rotate: 1, y: 0, x: 0 }}
-          animate={{ rotate: -2, y: 2, x: 2 }}
-          transition={{
-            ease: "linear",
-            duration: 0.3,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          alt="lambo"
-          src="/lambo.png"
-          className=" absolute z-0 bottom-10 left-[-70px] h-80 z-2"
-        />
-      </div>
       <div className="md:py-20 pt-20 px-10 relative bg-orange-400 w-full overflow-hidden border-b-4 border-black">
         <h2 className="md:text-6xl text-4xl text-right text-white [text-shadow:-4px_2px_0px_#000000] font-outline-2 tracking-normal pb-20">
           Roadmap
