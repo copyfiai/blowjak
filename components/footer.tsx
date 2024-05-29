@@ -17,7 +17,7 @@ const Footer = () => {
             <Image src="/social/ts.png" height={50} width={50} alt="Logo" />
           </Link>
           <Link
-            href="https://twitter.com/BlowjakOnBase"
+            href="https://x.com/BlowjakOnSol"
             className="cursor-pointer hover:animate-spin"
           >
             <Image src="/social/xs.png" height={40} width={40} alt="Logo" />
