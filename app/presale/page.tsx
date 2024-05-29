@@ -55,7 +55,7 @@ const Presale = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    const address = "0x9690e6b6E9f9EA3f96eC4B986Eb4036bf6cFD1E4"; // Replace with your address
+    const address = "pump.fun"; // Replace with your address
     navigator.clipboard
       .writeText(address)
       .then(() => {
@@ -119,11 +119,10 @@ const Presale = () => {
           className="pb-10 mt-[-40px] mr-[-80px]"
         />
 
-
         <Timer date={new Date("2024-05-27")} />
         <div className="flex relative z-20">
           <div className="bg-gray-200 relative md:px-6 px-2 py-[12px] md:text-lg text-[10px] font-mono rounded-full border-2 border-black md:pr-32 pr-[88px]">
-            0x9690e6b6E9f9EA3f96eC4B986Eb4036bf6cFD1E4{" "}
+            pump.fun will realese the CA soon{" "}
           </div>
           <button
             className="bg-sky-500 md:text-lg absolute right-2 top-[6px] md:px-6 px-4 md:py-[6px] text-sm rounded-full hover:bg-sky-300 py-1 border-2 border-black tracking-wider text-white font-outline-2 [text-shadow:-2px_2px_0px_#000000]"
@@ -161,21 +160,12 @@ const Presale = () => {
             </h3>
             <div className="flex items-center gap-2 ">
               <div className="w-4 h-4 bg-[#f06a22] rounded-full border-2 border-black" />
-<<<<<<<<< Temporary merge branch 1
-              <p className="text-left text-black/80">50% of Raise to LP</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-sky-500 shrink-0 rounded-full border-2 border-black" />
-              <p className="text-black/80 shrink-0">
-                50% of Raise for expenses/development
-              </p>
-=========
+
               <p className="text-left text-black/80">90% Fair Launch</p>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-sky-500 shrink-0 rounded-full border-2 border-black" />
               <p className="text-black/80 shrink-0">10% for Team</p>
->>>>>>>>> Temporary merge branch 2
             </div>
           </div>
         </div>
@@ -275,11 +265,12 @@ const Presale = () => {
               className="mx-auto"
             />
             <h3 className="text-white font-outline-2 text-4xl [text-shadow:-2px_2px_0px_#000000] pb-2">
-              2. Presale
+              2. Pump it
             </h3>
             <p className="text-black/80 font-mono">
-              The $BJ Presale will only be open for 24 hours. The Presale might
-              close earlier if the Milestone is hit.
+              $BJ will be launching on Pump.fun and will go live on Raydium
+              shortly after. In other words, Pump.fun is the launching pad, and
+              is a great opportunity you will get for the best entry.
             </p>
           </div>
           <div className="max-w-sm mx-auto">
