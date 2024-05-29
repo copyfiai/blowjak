@@ -22,9 +22,11 @@ const q = [
       "Make sure to download Metamask as an extension/app on your browser/mobile phone. Then, simply purchase $BJ using the BASE-ETH through a DEX like Uniswap for example. It's really easy to Blow it!",
   },
   {
-    question: "4. How Long is Presale?",
-    answer:
-      "The Presale lasts 24h, might close earlier if the milestone is hit. Not everyone will make it in time to Jak it.",
+
+    question: "4. Where do I find BlowJak on sol?",
+    answer: `You can buy $BJ first on pump.fun. 
+      Better to get in early, because it will already have a decent mcap by the time we go to raydium.`,
+
   },
 ];
 
